@@ -11,13 +11,13 @@ lazy val defaultSettings =
 
 lazy val squants = crossProject(JSPlatform, JVMPlatform, NativePlatform)
   .crossType(CrossType.Full)
-  .enablePlugins(TutPlugin)
+  // .enablePlugins(TutPlugin)
   .in(file("."))
   .settings(defaultSettings: _*)
   .jvmSettings(
     osgiSettings,
-    tutTargetDirectory := file("."),
-    tutSourceDirectory := file("shared") / "src" / "main" / "tut"
+    // tutTargetDirectory := file("."),
+    // tutSourceDirectory := file("shared") / "src" / "main" / "tut"
   )
   .jsSettings(
     parallelExecution in Test := false,
