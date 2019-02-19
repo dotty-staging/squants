@@ -39,7 +39,6 @@ lazy val squantsJS = squants.js
 lazy val squantsNative = squants.native
 
 lazy val dottySettings = List(
-  scalaVersion := dottyLatestNightlyBuild.get,
   libraryDependencies := libraryDependencies.value.map(_.withDottyCompat(scalaVersion.value)),
   scalacOptions := List("-language:Scala2")
 )
