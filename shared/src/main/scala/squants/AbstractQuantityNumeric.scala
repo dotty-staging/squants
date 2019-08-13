@@ -18,6 +18,7 @@ package squants
 abstract class AbstractQuantityNumeric[A <: Quantity[A]](val unit: UnitOfMeasure[A] with PrimaryUnit) extends Numeric[A] {
   def plus(x: A, y: A) = x + y
   def minus(x: A, y: A) = x - y
+  def parseString(str: String): Option[A] = None
 
   /**
    * `times` is not a supported Numeric operation for Quantities.

@@ -9,9 +9,9 @@ object Versions {
   val Scala = "2.11.11"
   val ScalaCross = Seq("2.12.2", "2.11.11", "2.10.6")
 
-  val ScalaTest = "3.0.3"
-  val ScalaCheck = "1.13.5"
-  val Json4s = "3.5.1"
+  val ScalaTest = "3.0.8"
+  val ScalaCheck = "1.14.0"
+  val Json4s = "3.6.7"
 }
 
 object Dependencies {
